@@ -1,5 +1,5 @@
 import {MainGoal} from "../MainGoal.jsx";
-import componentsImg from "./assets/components.png";
+import { CORE_CONCEPTS } from "./data.js";
 
 const reactDescription = ['Fundamental', 'Crucial', 'Core'];
 
@@ -32,30 +32,30 @@ function Header() {
 function App() {
   return (
     <div>
-      <Header/>
+      <Header/> 
       <main>
         <section id="core-concepts">
         <h2>Core Concepts</h2>
         <ul>
         <Coreconcept 
-          title="Components" 
-          description="The core UI building block."
-          image={componentsImg}
+          title={CORE_CONCEPTS[0].title} 
+          description={CORE_CONCEPTS[0].description}
+          image={CORE_CONCEPTS[0].image}
         />
         <Coreconcept 
-          title="Components" 
-          description="The core UI building block."
-          image={componentsImg}
+          title={CORE_CONCEPTS[1].title}
+          description={CORE_CONCEPTS[1].description}
+          image={CORE_CONCEPTS[1].image}
         />
         <Coreconcept 
-          title="Components" 
-          description="The core UI building block."
-          image={componentsImg}
+          title={CORE_CONCEPTS[2].title}
+          description={CORE_CONCEPTS[2].description}
+          image={CORE_CONCEPTS[2].image}
         />
         <Coreconcept 
-          title="Components" 
-          description="The core UI building block."
-          image={componentsImg}
+          title={CORE_CONCEPTS[3].title}
+          description={CORE_CONCEPTS[3].description}
+          image={CORE_CONCEPTS[3].image}
         />
         </ul>
         </section>
