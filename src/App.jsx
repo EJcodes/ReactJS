@@ -1,12 +1,6 @@
 import {MainGoal} from "../MainGoal.jsx";
 import { CORE_CONCEPTS } from "./data.js";
-import Header from "../components/Header.jsx";
-
-const reactDescription = ['Fundamental', 'Crucial', 'Core'];
-
-function genRandomInt(max) {
-  return Math.floor(Math.random() * (max + 1));
-}
+import Header from "./components/Header.jsx";
 
 
  function Coreconcept(props){
