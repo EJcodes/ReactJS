@@ -1,6 +1,6 @@
 import {MainGoal} from "../MainGoal.jsx";
 import { CORE_CONCEPTS } from "./data.js";
-import Header from "./components/Header.jsx";
+import Header from "./components/Header/Header.jsx";
 
 
  function Coreconcept(props){
