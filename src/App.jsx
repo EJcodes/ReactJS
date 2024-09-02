@@ -15,7 +15,7 @@ import {EXAMPLES} from './data.js';
  }
 
 function App() {
-  const [ selectedTopic, setSelectedTopic ] = useState('components');
+  const [ selectedTopic, setSelectedTopic ] = useState();
 
   
 
@@ -61,6 +61,8 @@ function App() {
             <TabButton onClick = { () => handleClick('props') }>Props</TabButton>
             <TabButton onClick = { () => handleClick('state') }>State</TabButton>
           </menu>
+          {!selectedTopic ? <p>Please select a topic.</p> : null}
+          {selectedTopic ? (
           <div id="tab-content">
             <h3>
               {EXAMPLES[selectedTopic].title}
@@ -73,8 +75,8 @@ function App() {
                 {EXAMPLES[selectedTopic].code}
               </code>
             </pre>
-            
           </div>
+          ) : null}
         </section>
       </main>
     </div>
