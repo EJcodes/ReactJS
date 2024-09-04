@@ -42,6 +42,7 @@ function App() {
     </pre>
   </div>
   }
+  //to do get more familar with conidtional data 
   return (
     <div>
       <Header/> 
