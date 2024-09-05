@@ -22,7 +22,6 @@ function App() {
   function handleClick(selectedButton) {
     // selectButton => 'components', 'jsx', 'props', 'state'
     setSelectedTopic(selectedButton);
-    console.log(selectedTopic);
   }
 
   let tabContent = <p>Please select a topic.</p>;
