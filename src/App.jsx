@@ -4,7 +4,7 @@ import Header from "./components/Header/Header.jsx";
 import TabButton from "./components/TabButton.jsx";
 import {EXAMPLES} from './data.js';
 
- function Coreconcept(props){
+ function CoreConcept(props){
   return(
     <li>
       <img src={props.image} alt={props.title} />
@@ -48,27 +48,8 @@ function App() {
       <main>
         <section id="core-concepts">
         <h2>Core Concepts</h2>
-        <ul>
-        <Coreconcept 
-          title={CORE_CONCEPTS[0].title} 
-          description={CORE_CONCEPTS[0].description}
-          image={CORE_CONCEPTS[0].image}
-        />
-        <Coreconcept 
-          title={CORE_CONCEPTS[1].title}
-          description={CORE_CONCEPTS[1].description}
-          image={CORE_CONCEPTS[1].image}
-        />
-        <Coreconcept 
-          title={CORE_CONCEPTS[2].title}
-          description={CORE_CONCEPTS[2].description}
-          image={CORE_CONCEPTS[2].image}
-        />
-        <Coreconcept 
-          title={CORE_CONCEPTS[3].title}
-          description={CORE_CONCEPTS[3].description}
-          image={CORE_CONCEPTS[3].image}
-        />
+        <ul> 
+          {CORE_CONCEPTS.map(( conceptItem ) => <CoreConcept {...conceptItem} />)}
         </ul>
         </section>
         <section id="examples">
