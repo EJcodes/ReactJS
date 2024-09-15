@@ -4,15 +4,6 @@ import Header from "./components/Header/Header.jsx";
 import TabButton from "./components/TabButton.jsx";
 import {EXAMPLES} from './data.js';
 
- function CoreConcept(props){
-  return(
-    <li>
-      <img src={props.image} alt={props.title} />
-      <h3>{props.title}</h3>
-      <p>{props.description}</p>
-    </li>
-  )
- }
 
 function App() {
   const [ selectedTopic, setSelectedTopic ] = useState();
