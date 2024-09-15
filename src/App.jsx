@@ -1,5 +1,5 @@
 import { useState, Fragment} from 'react';
-import { CORE_CONCEPTS } from "./data.js";
+import CoreConcepts from './components/CoreConcepts.jsx';
 import Header from "./components/Header/Header.jsx";
 import TabButton from "./components/TabButton.jsx";
 import {EXAMPLES} from './data.js';
@@ -46,13 +46,8 @@ function App() {
     <>
       <Header/> 
       <main>
-        <section id="core-concepts">
-        <h2>Core Concepts</h2>
-        <ul> 
-          {CORE_CONCEPTS.map(( conceptItem ) => <CoreConcept {...conceptItem} />)}
-        </ul>
-        </section>
-        <section id="examples">
+        <CoreConcepts />
+          <section id="examples">
           <h2>Examples</h2>
           <menu>
             <TabButton isSelected={ selectedTopic === 'components' } onClick = { () => handleClick('components')}>Components</TabButton>
